@@ -1,0 +1,54 @@
+{
+  "scenarioId": "scenario_02",
+  "name": "One Flooded Route Segment",
+  "description": "Richmond Road on the primary route becomes severely flooded. Original route invalidated, new route via Hosur Road and Langford Road selected.",
+  "dataType": "DEMO_SCENARIO",
+  "ambulance": {
+    "id": "A-07",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "status": "EN_ROUTE",
+    "speedKmh": 38,
+    "heading": 45,
+    "currentRoad": "80 Feet Road",
+    "location": "Koramangala 5th Block"
+  },
+  "hospitalSelectionMode": "nearest_reachable",
+  "floodEvents": [
+    {
+      "roadId": "road_103",
+      "roadName": "Richmond Road",
+      "floodSeverity": 0.91,
+      "floodConfidence": 0.88,
+      "waterDepthCm": 35,
+      "status": "BLOCKED",
+      "sourceType": "CAMERA_MODEL",
+      "sourceId": "camera_12",
+      "detectedAtOffsetSeconds": 0,
+      "expiresAfterMinutes": 15,
+      "verificationStatus": "UNVERIFIED"
+    }
+  ],
+  "trafficMultipliers": {
+    "road_101": 1.0,
+    "road_102": 1.0,
+    "road_103": 99.0,
+    "road_104": 1.0,
+    "road_201": 1.0,
+    "road_202": 1.0
+  },
+  "expectedResult": {
+    "selectedHospital": "hospital_001",
+    "originalRoute": ["road_101", "road_102", "road_103", "road_104"],
+    "originalRouteStatus": "INVALIDATED",
+    "selectedRoute": ["road_201", "road_202", "road_104"],
+    "avoidedRoads": ["road_103"],
+    "etaMinutes": 21.0,
+    "additionalTimeMinutes": 2.0,
+    "distanceKm": 7.4,
+    "floodExposure": 0.05,
+    "floodRiskReduction": 0.72,
+    "routeConfidence": 0.89,
+    "explanation": "Selected because it avoids the confirmed flooded segment on Richmond Road (severity: 0.91, confidence: 88%) and has the lowest combined emergency travel score via Hosur Road and Langford Road."
+  }
+}

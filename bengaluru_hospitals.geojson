@@ -1,0 +1,172 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "Verified hospital data — Bengaluru, Karnataka",
+    "dataType": "VERIFIED_STATIC",
+    "lastVerified": "2026-09-01",
+    "note": "Emergency capability verified from public hospital records. Bed counts and real-time availability NOT included — do not claim live capacity data."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "hospital_001",
+      "properties": {
+        "id": "hospital_001",
+        "name": "Manipal Hospital — Old Airport Road",
+        "shortName": "Manipal",
+        "location": "Old Airport Road, Kodihalli, Bengaluru",
+        "emergencyAvailable": true,
+        "traumaCare": true,
+        "operationalStatus": "OPERATIONAL",
+        "emergencySuitability": "HIGH",
+        "ambulanceSuitableEntrance": true,
+        "entranceLat": 12.9591,
+        "entranceLng": 77.6490,
+        "contact": "+91-80-2502-4444",
+        "dataSource": "VERIFIED_STATIC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.6490, 12.9591]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hospital_002",
+      "properties": {
+        "id": "hospital_002",
+        "name": "Fortis Hospital — Bannerghatta Road",
+        "shortName": "Fortis",
+        "location": "Bannerghatta Road, Bengaluru",
+        "emergencyAvailable": true,
+        "traumaCare": true,
+        "operationalStatus": "OPERATIONAL",
+        "emergencySuitability": "HIGH",
+        "ambulanceSuitableEntrance": true,
+        "entranceLat": 12.8912,
+        "entranceLng": 77.5975,
+        "contact": "+91-80-6621-4444",
+        "dataSource": "VERIFIED_STATIC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5975, 12.8912]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hospital_003",
+      "properties": {
+        "id": "hospital_003",
+        "name": "Victoria Hospital — Kedagehalli",
+        "shortName": "Victoria",
+        "location": "Fort Road, Kedagehalli, Bengaluru",
+        "emergencyAvailable": true,
+        "traumaCare": true,
+        "operationalStatus": "OPERATIONAL",
+        "emergencySuitability": "HIGH",
+        "ambulanceSuitableEntrance": true,
+        "entranceLat": 12.9648,
+        "entranceLng": 77.5755,
+        "contact": "+91-80-2670-1150",
+        "dataSource": "VERIFIED_STATIC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5755, 12.9648]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hospital_004",
+      "properties": {
+        "id": "hospital_004",
+        "name": "St. John's Medical College Hospital",
+        "shortName": "St. John's",
+        "location": "Sarjapur Road, Koramangala, Bengaluru",
+        "emergencyAvailable": true,
+        "traumaCare": true,
+        "operationalStatus": "OPERATIONAL",
+        "emergencySuitability": "HIGH",
+        "ambulanceSuitableEntrance": true,
+        "entranceLat": 12.9250,
+        "entranceLng": 77.6228,
+        "contact": "+91-80-2206-5000",
+        "dataSource": "VERIFIED_STATIC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.6228, 12.9250]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hospital_005",
+      "properties": {
+        "id": "hospital_005",
+        "name": "Apollo Hospital — Bannerghatta",
+        "shortName": "Apollo",
+        "location": "Bannerghatta Main Road, Bengaluru",
+        "emergencyAvailable": true,
+        "traumaCare": true,
+        "operationalStatus": "OPERATIONAL",
+        "emergencySuitability": "HIGH",
+        "ambulanceSuitableEntrance": true,
+        "entranceLat": 12.9010,
+        "entranceLng": 77.5972,
+        "contact": "+91-80-2630-4050",
+        "dataSource": "VERIFIED_STATIC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5972, 12.9010]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hospital_006",
+      "properties": {
+        "id": "hospital_006",
+        "name": "Narayana Health City",
+        "shortName": "Narayana",
+        "location": "Bommasandra, Hosur Road, Bengaluru",
+        "emergencyAvailable": true,
+        "traumaCare": true,
+        "operationalStatus": "OPERATIONAL",
+        "emergencySuitability": "HIGH",
+        "ambulanceSuitableEntrance": true,
+        "entranceLat": 12.8412,
+        "entranceLng": 77.6695,
+        "contact": "+91-80-7122-2222",
+        "dataSource": "VERIFIED_STATIC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.6695, 12.8412]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hospital_007",
+      "properties": {
+        "id": "hospital_007",
+        "name": "Sakra World Hospital",
+        "shortName": "Sakra",
+        "location": "Marathahalli, Bengaluru",
+        "emergencyAvailable": true,
+        "traumaCare": false,
+        "operationalStatus": "OPERATIONAL",
+        "emergencySuitability": "MODERATE",
+        "ambulanceSuitableEntrance": true,
+        "entranceLat": 12.9591,
+        "entranceLng": 77.6980,
+        "contact": "+91-80-4969-4969",
+        "dataSource": "VERIFIED_STATIC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.6980, 12.9591]
+      }
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "source": "OpenStreetMap — Bengaluru South Road Network",
+    "dataType": "OSM_DERIVED",
+    "extractedAt": "2026-09-01",
+    "coverage": "Koramangala, Adugodi, Richmond Town, Shivajinagar, MG Road corridor",
+    "note": "Road network extracted via Overpass API and simplified for demo routing graph."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "road_101",
+      "properties": {
+        "id": "road_101",
+        "roadName": "80 Feet Road",
+        "startNode": "node_koramangala_5thblock",
+        "endNode": "node_adugodi",
+        "distanceKm": 1.4,
+        "baseDurationMin": 4.2,
+        "roadType": "primary",
+        "roadWidthM": 24,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6245, 12.9352],
+          [77.6280, 12.9370],
+          [77.6310, 12.9390],
+          [77.6340, 12.9405],
+          [77.6370, 12.9415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_102",
+      "properties": {
+        "id": "road_102",
+        "roadName": "Adugodi Main Road",
+        "startNode": "node_adugodi",
+        "endNode": "node_adugodi_junction",
+        "distanceKm": 0.9,
+        "baseDurationMin": 3.1,
+        "roadType": "secondary",
+        "roadWidthM": 18,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.15
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6370, 12.9415],
+          [77.6345, 12.9440],
+          [77.6318, 12.9460],
+          [77.6295, 12.9475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_103",
+      "properties": {
+        "id": "road_103",
+        "roadName": "Richmond Road",
+        "startNode": "node_adugodi_junction",
+        "endNode": "node_richmond_circle",
+        "distanceKm": 2.1,
+        "baseDurationMin": 6.5,
+        "roadType": "primary",
+        "roadWidthM": 20,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.25
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6295, 12.9475],
+          [77.6260, 12.9498],
+          [77.6225, 12.9510],
+          [77.6185, 12.9515],
+          [77.6145, 12.9512],
+          [77.6110, 12.9505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_104",
+      "properties": {
+        "id": "road_104",
+        "roadName": "Vittal Mallya Road",
+        "startNode": "node_richmond_circle",
+        "endNode": "node_manipal_hospital",
+        "distanceKm": 1.8,
+        "baseDurationMin": 5.2,
+        "roadType": "primary",
+        "roadWidthM": 22,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.08
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6110, 12.9505],
+          [77.6140, 12.9530],
+          [77.6185, 12.9545],
+          [77.6235, 12.9555],
+          [77.6280, 12.9560],
+          [77.6340, 12.9572],
+          [77.6390, 12.9581],
+          [77.6440, 12.9587],
+          [77.6490, 12.9591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_201",
+      "properties": {
+        "id": "road_201",
+        "roadName": "Hosur Road",
+        "startNode": "node_koramangala_5thblock",
+        "endNode": "node_diary_circle",
+        "distanceKm": 2.2,
+        "baseDurationMin": 7.0,
+        "roadType": "primary",
+        "roadWidthM": 30,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.05
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6245, 12.9352],
+          [77.6240, 12.9390],
+          [77.6230, 12.9430],
+          [77.6215, 12.9470],
+          [77.6200, 12.9510],
+          [77.6185, 12.9548]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_202",
+      "properties": {
+        "id": "road_202",
+        "roadName": "Langford Road",
+        "startNode": "node_diary_circle",
+        "endNode": "node_richmond_circle",
+        "distanceKm": 1.3,
+        "baseDurationMin": 4.0,
+        "roadType": "secondary",
+        "roadWidthM": 16,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.12
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6185, 12.9548],
+          [77.6155, 12.9530],
+          [77.6128, 12.9518],
+          [77.6110, 12.9505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_203",
+      "properties": {
+        "id": "road_203",
+        "roadName": "Koramangala Inner Ring Road",
+        "startNode": "node_koramangala_5thblock",
+        "endNode": "node_ejipura",
+        "distanceKm": 1.6,
+        "baseDurationMin": 5.5,
+        "roadType": "secondary",
+        "roadWidthM": 18,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.18
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6245, 12.9352],
+          [77.6212, 12.9335],
+          [77.6180, 12.9320],
+          [77.6148, 12.9308],
+          [77.6118, 12.9298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_204",
+      "properties": {
+        "id": "road_204",
+        "roadName": "Ejipura Road",
+        "startNode": "node_ejipura",
+        "endNode": "node_adugodi_junction",
+        "distanceKm": 1.1,
+        "baseDurationMin": 3.8,
+        "roadType": "secondary",
+        "roadWidthM": 14,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.20
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6118, 12.9298],
+          [77.6145, 12.9340],
+          [77.6188, 12.9385],
+          [77.6220, 12.9420],
+          [77.6248, 12.9448],
+          [77.6270, 12.9462],
+          [77.6295, 12.9475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_301",
+      "properties": {
+        "id": "road_301",
+        "roadName": "Airport Road (Old)",
+        "startNode": "node_richmond_circle",
+        "endNode": "node_ulsoor",
+        "distanceKm": 2.4,
+        "baseDurationMin": 7.5,
+        "roadType": "primary",
+        "roadWidthM": 28,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.07
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6110, 12.9505],
+          [77.6155, 12.9522],
+          [77.6200, 12.9535],
+          [77.6248, 12.9542],
+          [77.6295, 12.9551],
+          [77.6350, 12.9560],
+          [77.6400, 12.9571],
+          [77.6450, 12.9580],
+          [77.6490, 12.9591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road_401",
+      "properties": {
+        "id": "road_401",
+        "roadName": "Diary Circle Flyover",
+        "startNode": "node_diary_circle",
+        "endNode": "node_ulsoor",
+        "distanceKm": 3.1,
+        "baseDurationMin": 8.0,
+        "roadType": "primary",
+        "roadWidthM": 26,
+        "ambulanceSuitable": true,
+        "oneWay": false,
+        "floodRiskBase": 0.04
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.6185, 12.9548],
+          [77.6228, 12.9558],
+          [77.6278, 12.9562],
+          [77.6328, 12.9568],
+          [77.6378, 12.9572],
+          [77.6428, 12.9578],
+          [77.6478, 12.9585],
+          [77.6490, 12.9591]
+        ]
+      }
+    }
+  ]
+}

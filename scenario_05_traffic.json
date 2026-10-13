@@ -1,0 +1,36 @@
+{
+  "scenarioId": "scenario_05",
+  "name": "Traffic Increase Changes Route",
+  "description": "No flooding, but heavy traffic on 80 Feet Road and Richmond Road makes the alternative via Hosur Road preferable.",
+  "dataType": "DEMO_SCENARIO",
+  "ambulance": {
+    "id": "A-07",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "status": "EN_ROUTE",
+    "speedKmh": 22,
+    "heading": 45,
+    "currentRoad": "80 Feet Road",
+    "location": "Koramangala 5th Block"
+  },
+  "hospitalSelectionMode": "nearest_reachable",
+  "floodEvents": [],
+  "trafficMultipliers": {
+    "road_101": 2.8,
+    "road_102": 1.4,
+    "road_103": 2.5,
+    "road_104": 1.1,
+    "road_201": 1.2,
+    "road_202": 1.1
+  },
+  "expectedResult": {
+    "selectedHospital": "hospital_001",
+    "selectedRoute": ["road_201", "road_202", "road_104"],
+    "etaMinutes": 23.5,
+    "distanceKm": 7.4,
+    "floodExposure": 0.0,
+    "trafficDelay": 2.1,
+    "routeConfidence": 0.91,
+    "explanation": "Heavy traffic on 80 Feet Road (2.8× delay) and Richmond Road (2.5× delay) makes the Hosur Road alternative faster despite longer distance. Traffic-aware composite score selected this route."
+  }
+}

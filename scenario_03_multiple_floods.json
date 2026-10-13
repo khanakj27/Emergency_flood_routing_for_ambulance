@@ -1,0 +1,69 @@
+{
+  "scenarioId": "scenario_03",
+  "name": "Multiple Flooded Roads",
+  "description": "Richmond Road and Hosur Road both flooded. System selects safest remaining route via Koramangala Inner Ring Road and Ejipura Road.",
+  "dataType": "DEMO_SCENARIO",
+  "ambulance": {
+    "id": "A-07",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "status": "EN_ROUTE",
+    "speedKmh": 35,
+    "heading": 45,
+    "currentRoad": "80 Feet Road",
+    "location": "Koramangala 5th Block"
+  },
+  "hospitalSelectionMode": "nearest_reachable",
+  "floodEvents": [
+    {
+      "roadId": "road_103",
+      "roadName": "Richmond Road",
+      "floodSeverity": 0.91,
+      "floodConfidence": 0.88,
+      "waterDepthCm": 35,
+      "status": "BLOCKED",
+      "sourceType": "CAMERA_MODEL",
+      "sourceId": "camera_12",
+      "detectedAtOffsetSeconds": 0,
+      "expiresAfterMinutes": 15,
+      "verificationStatus": "UNVERIFIED"
+    },
+    {
+      "roadId": "road_201",
+      "roadName": "Hosur Road",
+      "floodSeverity": 0.82,
+      "floodConfidence": 0.79,
+      "waterDepthCm": 28,
+      "status": "BLOCKED",
+      "sourceType": "CAMERA_MODEL",
+      "sourceId": "camera_05",
+      "detectedAtOffsetSeconds": 120,
+      "expiresAfterMinutes": 15,
+      "verificationStatus": "UNVERIFIED"
+    }
+  ],
+  "trafficMultipliers": {
+    "road_101": 1.0,
+    "road_102": 1.0,
+    "road_103": 99.0,
+    "road_104": 1.1,
+    "road_201": 99.0,
+    "road_202": 1.0,
+    "road_203": 1.0,
+    "road_204": 1.0
+  },
+  "expectedResult": {
+    "selectedHospital": "hospital_001",
+    "originalRoute": ["road_101", "road_102", "road_103", "road_104"],
+    "originalRouteStatus": "INVALIDATED",
+    "selectedRoute": ["road_203", "road_204", "road_104"],
+    "avoidedRoads": ["road_103", "road_201"],
+    "etaMinutes": 26.5,
+    "additionalTimeMinutes": 7.5,
+    "distanceKm": 8.8,
+    "floodExposure": 0.08,
+    "floodRiskReduction": 0.85,
+    "routeConfidence": 0.82,
+    "explanation": "Selected because both primary routes (Richmond Road, Hosur Road) are confirmed blocked by severe flooding. Alternative via Koramangala Inner Ring Road and Ejipura Road has no blocked segments and acceptable flood exposure."
+  }
+}

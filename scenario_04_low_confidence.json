@@ -1,0 +1,51 @@
+{
+  "scenarioId": "scenario_04",
+  "name": "Low-Confidence Flood Detection",
+  "description": "Richmond Road has moderate flood severity but low detection confidence. Road is penalized rather than blocked. Interface shows UNCERTAIN status.",
+  "dataType": "DEMO_SCENARIO",
+  "ambulance": {
+    "id": "A-07",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "status": "EN_ROUTE",
+    "speedKmh": 38,
+    "heading": 45,
+    "currentRoad": "80 Feet Road",
+    "location": "Koramangala 5th Block"
+  },
+  "hospitalSelectionMode": "nearest_reachable",
+  "floodEvents": [
+    {
+      "roadId": "road_103",
+      "roadName": "Richmond Road",
+      "floodSeverity": 0.62,
+      "floodConfidence": 0.41,
+      "waterDepthCm": null,
+      "status": "UNCERTAIN",
+      "sourceType": "CROWDSOURCED",
+      "sourceId": "report_007",
+      "detectedAtOffsetSeconds": 0,
+      "expiresAfterMinutes": 10,
+      "verificationStatus": "UNDER_VERIFICATION"
+    }
+  ],
+  "trafficMultipliers": {
+    "road_101": 1.0,
+    "road_102": 1.0,
+    "road_103": 1.8,
+    "road_104": 1.0,
+    "road_201": 1.0,
+    "road_202": 1.0
+  },
+  "expectedResult": {
+    "selectedHospital": "hospital_001",
+    "selectedRoute": ["road_201", "road_202", "road_104"],
+    "uncertainRoads": ["road_103"],
+    "etaMinutes": 21.0,
+    "distanceKm": 7.4,
+    "floodExposure": 0.09,
+    "routeConfidence": 0.78,
+    "explanation": "Richmond Road has unverified moderate flooding (severity: 0.62, confidence: 41%). Road is penalized but not blocked. System selected alternative route as precaution. Richmond Road remains UNDER_VERIFICATION.",
+    "uncertaintyWarning": "Flood data on Richmond Road has low confidence (41%). Route avoids this road as a precaution. Operator may override."
+  }
+}

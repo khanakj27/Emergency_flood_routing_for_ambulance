@@ -1,0 +1,45 @@
+{
+  "scenarioId": "scenario_06",
+  "name": "Manual Road Closure",
+  "description": "Operator manually closes Richmond Road. System recalculates using alternate route.",
+  "dataType": "DEMO_SCENARIO",
+  "ambulance": {
+    "id": "A-07",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "status": "EN_ROUTE",
+    "speedKmh": 38,
+    "heading": 45,
+    "currentRoad": "80 Feet Road",
+    "location": "Koramangala 5th Block"
+  },
+  "hospitalSelectionMode": "nearest_reachable",
+  "floodEvents": [],
+  "manualClosures": [
+    {
+      "roadId": "road_103",
+      "roadName": "Richmond Road",
+      "reason": "Manual operator closure — accident reported",
+      "source": "DISPATCHER",
+      "status": "CLOSED"
+    }
+  ],
+  "trafficMultipliers": {
+    "road_101": 1.0,
+    "road_102": 1.0,
+    "road_103": 99.0,
+    "road_104": 1.0,
+    "road_201": 1.0,
+    "road_202": 1.0
+  },
+  "expectedResult": {
+    "selectedHospital": "hospital_001",
+    "selectedRoute": ["road_201", "road_202", "road_104"],
+    "closedRoads": ["road_103"],
+    "etaMinutes": 21.0,
+    "distanceKm": 7.4,
+    "floodExposure": 0.0,
+    "routeConfidence": 0.92,
+    "explanation": "Richmond Road is manually closed by dispatcher. System recalculated via Hosur Road and Langford Road. Manual closure takes highest priority over all routing scores."
+  }
+}

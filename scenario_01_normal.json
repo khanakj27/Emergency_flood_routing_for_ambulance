@@ -1,0 +1,34 @@
+{
+  "scenarioId": "scenario_01",
+  "name": "Normal Conditions",
+  "description": "No flooded roads. Initial route is selected. All metrics nominal.",
+  "dataType": "DEMO_SCENARIO",
+  "ambulance": {
+    "id": "A-07",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "status": "EN_ROUTE",
+    "speedKmh": 38,
+    "heading": 45,
+    "currentRoad": "80 Feet Road",
+    "location": "Koramangala 5th Block"
+  },
+  "hospitalSelectionMode": "nearest_reachable",
+  "floodEvents": [],
+  "trafficMultipliers": {
+    "road_101": 1.0,
+    "road_102": 1.0,
+    "road_103": 1.0,
+    "road_104": 1.0,
+    "road_201": 1.0,
+    "road_202": 1.0
+  },
+  "expectedResult": {
+    "selectedHospital": "hospital_001",
+    "selectedRoute": ["road_101", "road_102", "road_103", "road_104"],
+    "etaMinutes": 19.0,
+    "distanceKm": 6.2,
+    "floodExposure": 0.0,
+    "routeConfidence": 0.95
+  }
+}
